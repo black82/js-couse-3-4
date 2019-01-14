@@ -1,0 +1,20 @@
+{
+  "name": "JavaScript",
+  "version": "1.0.0",
+  "description": "JS Course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev-tim/js-couse-3-4.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dev-tim/js-couse-3-4/issues"
+  },
+  "homepage": "https://github.com/dev-tim/js-couse-3-4#readme"
+}
