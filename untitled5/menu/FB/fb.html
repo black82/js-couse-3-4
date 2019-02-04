@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+<title>FBButon</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+<link  rel="stylesheet" href="stylefb.css">
+</head>
+<body>
+Login to Facebook
+<hr />
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+  FB.init({
+    appId      : '497253267451200',
+    status     : true,
+    cookie     : true,
+    xfbml      : true
+  });
+  FB.Event.subscribe('auth.authResponseChange', function(response) {
+    if (response.status === 'connected') {
+      testAPI();
+    } else if (response.status === 'not_authorized') {
+      FB.login();
+    } else {
+      FB.login();
+    }
+  });
+  };
+  (function(d){
+   var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+   if (d.getElementById(id)) {return;}
+   js = d.createElement('script'); js.id = id; js.async = true;
+   js.src = "//connect.facebook.net/en_US/all.js";
+   ref.parentNode.insertBefore(js, ref);
+  }(document));
+  function testAPI() {
+    console.log('Welcome!  Fetching your information.... ');
+    FB.api('/me', function(response) {
+        document.getElementById("user_data").innerHTML=JSON.stringify(response, undefined, "\t");
+    });
+    }
+</script>
+<fb:login-button show-faces="true" width="200" max-rows="1">Login FB</fb:login-button>
+<div id='user_data'>
+   <button class="btn btn-primary"  onclick="location.href='http://localhost:63342/untitled5/menu/index.html?_ijt=vuvr68q2usc071hvsdst9gqnpl'"  >Return to main menu</button>
+
+</div>
+</body>
+</html>

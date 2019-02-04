@@ -1,0 +1,89 @@
+.maiman{
+    -webkit-border-radius: 50em;
+    -moz-border-radius: 50em;
+    border-radius: 50em;
+    position: relative;
+    left: 40px;
+   top: 10px;
+    width:600px;
+    height:450px;
+padding: 5px;
+    border: darkblue  2px solid ;
+    ;
+}
+.container1{
+
+    background-color: #dddddd;
+    border: 2px solid seashell;
+    /*overflow: auto;*/
+}
+
+
+.s1{
+    position: relative;
+    top: 10px;
+    toggle-group: 20px;
+    text-align: justify;
+    letter-spacing: 2px;
+    height: 9em;
+    padding: 2em 10%;
+    background: #2c3e50;
+    color: #fff;
+}
+.s2{
+    toggle-group: 20px;
+    text-align: justify;
+    letter-spacing: 1px;
+    height: 8em;
+    padding: 2em 10%;
+    background: #35acdf;
+    color: #fff;
+}
+.s3{
+    toggle-group: 20px;
+    text-align: justify;
+    letter-spacing: 1px;
+    height: 8em;
+    padding: 2em 10%;
+    background:coral;
+    color: #fff;
+}
+.container2{
+    background-color: antiquewhite;
+    border: 2px solid seashell;
+}
+.image1{
+    position: relative;
+    top: 20px;
+    border: coral solid 2px;
+    width: 100%;px;
+    height:300px;
+}
+.image2{
+    position: relative;
+    top: 20px;
+    border: blue solid 2px;
+    width:100%;
+    height:300px;
+}
+.image3{
+    position: relative;
+    top: 20px;
+    border: green solid 2px;
+    width: 100%;
+    height:300px;
+}
+.input{
+    position: relative;
+    top: 80px;
+}
+.form-group{
+
+    position: relative;
+    top: 80px;
+}
+.form-check{
+    position: relative;
+    top: 00px;
+}
+
